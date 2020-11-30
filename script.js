@@ -4,19 +4,21 @@ let player = "X";
 let turn = 0;
 let xPoints = 0;
 let oPoints = 0;
-
+let active = true;
 let buttons = [document.getElementById(`buttona1`), document.getElementById(`buttona2`), document.getElementById(`buttona3`), document.getElementById(`buttonb1`), document.getElementById(`buttonb2`), document.getElementById(`buttonb3`), document.getElementById(`buttonc1`), document.getElementById(`buttonc2`), document.getElementById(`buttonc3`)]
 
 
 function mark(blank) {
 
+	if (active == false){
+		return;
+	}
 	if (document.getElementById(`button${blank}`).classList.contains("usedX") || document.getElementById(`button${blank}`).classList.contains("usedO")) {
 		return;
 	} else {
 		document.getElementById(`button${blank}`).textContent = player;
 		document.getElementById(`button${blank}`).classList.add(`used${player}`);
 	}
-
 
 	if (player == "X") {
 		player = "O";
@@ -196,7 +198,7 @@ function winner(winner) {
 		oPoints++;
 		document.getElementById("oPoints").textContent = `O = ${oPoints}`;
 	}
-
+	active = false;
 }
 
 function restart() {
