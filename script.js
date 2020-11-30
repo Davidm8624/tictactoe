@@ -217,4 +217,5 @@ function restart() {
 	player = "X"
 	document.getElementById("player").textContent = `Player: ${player}`;
 	document.getElementById("turn").textContent = `Turn: ${turn}`;
+	active = true;
 }
