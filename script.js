@@ -185,6 +185,7 @@ function checkWin() {
 
 	if (turn >= 9) {
 		document.getElementById("player").textContent = "DRAW";
+		document.getElementById("player").textContent = window.alert("DRAW");
 	}
 }
 
