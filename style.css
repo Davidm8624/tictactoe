@@ -1,0 +1,86 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: fantasy;
+}
+
+body{
+	min-height: 100vh;
+	color: black;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-creative-gold-flash-sheet-metal-background-gold-image_15891.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+main{
+	text-align: center;
+	display: grid;
+    align-content: center;
+	justify-content: center;
+}
+
+.board{
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	gap: 20px;
+	justify-content: center;
+}
+
+.button{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	font-size: 100px;
+	color: black;
+	user-select: none;
+}
+
+
+.buttona1{
+    background-color: whitesmoke;
+}
+.buttona2{
+    background-color: whitesmoke;
+}
+.buttona3{
+    background-color: whitesmoke;
+}
+.buttonb1{
+    background-color: whitesmoke;
+}
+.buttonb2{
+    background-color: whitesmoke;
+}
+.buttonb3{
+    background-color: whitesmoke;
+}
+.buttonc1{
+    background-color: whitesmoke;
+}
+.buttonc2{
+    background-color: whitesmoke;
+}
+.buttonc3{
+    background-color: whitesmoke;
+}
+
+.winningButtons{
+	background-color: gold;
+}
+
+.restart{
+	width: 100px;
+	margin: auto;
+}
+.restartButton{
+	background-color: black;
+    color: white;
+    user-select: none;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="david m">
+    <meta name="description" content="">
+
+    <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+	<main><br><br>
+		<div class="header">
+			<h1>TicTacToe</h1>
+		</div>
+		<div class="stats">
+			<p id="player">Player: X</p>
+			<p id="turn">Turn: 0</p>
+		</div>
+
+		<div class="board">
+			<div onclick="mark('a1')" id="buttona1" class="buttona1 button">
+			</div>
+			<div onclick="mark('a2')" id="buttona2" class="buttona2 button">
+			</div>
+			<div onclick="mark('a3')" id="buttona3" class="buttona3 button">
+			</div>
+
+			<div onclick="mark('b1')" id="buttonb1" class="buttonb1 button">
+			</div>
+			<div onclick="mark('b2')" id="buttonb2" class="buttonb2 button">
+			</div>
+			<div onclick="mark('b3')" id="buttonb3" class="buttonb3 button">
+			</div>
+
+			<div onclick="mark('c1')" id="buttonc1" class="buttonc1 button">
+			</div>
+			<div onclick="mark('c2')" id="buttonc2" class="buttonc2 button">
+			</div>
+			<div onclick="mark('c3')" id="buttonc3" class="buttonc3 button">
+			</div>
+		</div>
+
+		<div class="scoreBoard">
+			<h3>Score</h3><br>
+			<p id="xPoints">X = 0</p>
+			<p id="oPoints">O = 0</p>
+		</div>
+
+		<div class="restart">
+			<div onclick="restart()" class="restartButton">Restart</div>
+		</div>
+	</main>
+</body>
+	<script src="script.js"></script>
+</html>
